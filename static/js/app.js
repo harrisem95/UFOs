@@ -1,7 +1,8 @@
-// import the data from data.js
+
+// from data.js
 const tableData = data;
 
-// Reference the HTML data using d3
+// get table references
 var tbody = d3.select("tbody");
 
 // Simple 
@@ -43,7 +44,7 @@ function handleClick() {
     //Rebuild the table using the filtered data
     //@NOTE: if no date was entered then filteredData will
     //just be the original tableData.
-    buildTable(filteredDdata);
+    buildTable(filteredData);
 }
 
 //Attach an event to listen for the form button
